@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Ocean</title>
+
+
+    <style>
+        *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: x-small;
+}
+nav>div{
+    font-size: 30px;
+    font-family:sans-serif;
+}
+
+
+nav{
+    height: 9vh;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(235, 238, 241);
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+}
+.nav_link{
+    list-style-type: none;
+    font-family:sans-serif;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.logo{
+    height: 100%;
+    width:30%;
+    margin: 15px;
+}
+section{
+    position: relative;
+    top:9vh;
+    
+}
+.hero{
+    background-image: url("./images/mount\ 1.JPG");
+    height: 80vh;
+    background-size: cover;
+    background-repeat: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.happy1{
+    color: rgb(56, 56, 19);
+    font-size: 50px;
+    font-weight: bolder;
+    font-family:sans-serif;
+    padding: 10px;
+}
+.happy2{
+    color: rgb(56, 56, 19);
+    font-size: 50px;
+    font-weight:lighter;
+    font-family: Arial;
+}
+.btn1{
+    height: 40px;
+    width:120px;
+    background-color: rgb(70, 70, 40);
+    border: none;
+    margin: 20px;
+}
+.btn2{
+    color: rgb(216, 216, 194);
+    font-family: sans-serif;
+    font-size:12px;
+}
+.logos{
+    height:50vh;
+    background-color: azure;
+    padding: 20px;
+    background-color: rgb(241, 241, 247);
+    display: flex;
+    justify-content:center;
+}
+.logos>div{
+    height: 220px;
+    width: 250px;
+    background-color: rgb(244, 247, 250);
+    margin: 20px;
+    font-size: small;
+    font-family: sans-serif;
+    padding: 20px;
+    color: rgb(24, 24, 9);
+}
+.logos>div>img{
+    flex-wrap: wrap;
+    height:100px;
+    width: 100px;
+    margin-left:70px;
+}
+.logos>div>h2{
+    font-size: 20px;
+    font-family:sans-serif;
+    display: flex;
+    justify-content: center;
+    color: rgb(63, 63, 52);
+}
+
+.content{
+    height: 90vh;
+    background-color: whitesmoke;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content>div{
+    height: 100%;
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content>div>img{
+    height: 75%;
+    width:100%;
+    margin: 20px;
+}
+.content>div>h1{
+    font-family:'Times New Roman';
+    color: rgb(63, 63, 52);
+    padding-top: 20px;
+    border-bottom: solid rgb(158, 227, 255);
+
+}
+.content>div>h5{
+    padding: 10px;
+}
+.gallery{
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.div2{
+    margin: 10px;
+    height: 250px;
+    width: 252px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 2px 0;
+    padding: 20px;
+}
+.div2>button{
+    border: 2px solid aquamarine;
+    width: 100px;
+    height:30px;
+    color: aquamarine;
+    margin: 10px;
+
+}
+.div2>h5{
+    font-weight: bolder;
+    color: rgb(41, 41, 29);
+    border-bottom: 2px solid aquamarine;
+    margin: 8px;
+    
+}
+.div1>button{
+    height: 30px;
+    width:80px;
+}
+.div1{
+    margin:10px;
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+}
+.div2>img{
+    height: 250px;
+    width:253px;
+    background-size: cover;
+}
+#div11{
+    padding: 0;
+}
+.contact{
+    height: 50vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+.contact>h1{
+    border-bottom: 2px solid aquamarine;
+    margin: 15px;
+}
+.contact>button{
+    border: 2px solid aquamarine ;
+    width: 140px;
+    height:40px;
+    color: aquamarine;
+    margin: 20px;
+}
+.footer{
+    height: 35vh;
+    background-color:rgb(235, 228, 228);
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.footdiv{
+    margin: 10px;
+
+}
+ul{
+    list-style-type:none ;
+}
+#linkdiv{
+    display: flex;
+    flex-direction: column;
+}
+.footlink{
+    font-size: 13px;
+    color: aquamarine;
+    text-decoration-line: underline;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+         <div>simply.</div>
+        <ul class="nav_link">
+            <li class="logo"><a>HOME</a></li>
+            <li class="logo"><a>PORTFORLIO</a></li>
+            <li class="logo"><a>CONTACT</a></li>
+            <li class="logo"><a>BLOG</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1 class="happy1">A MINIMAL, CLEAN</h1>
+        <h1 class="happy2">LAYOUT FOR WEB DESIGN.</h1>
+        <button class="btn1"><a class="btn2">Get Started</a></button>
+    </section>
+    <section class="logos">
+        <div><img src="./images/pen logo.JPG" alt="pen logo"><h2>EASY TO EDIT</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, excepturi libero delectus accusantium rerum id voluptatibus itaque aliquid sed mollitia dolorem praesentium similique, cum recusandae assumenda quidem natus quae! Odio?</div>
+        <div><img src="./images/book logo.JPG" alt="book logo"><h2>LAYERED PSD</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores veniam provident beatae neque pariatur dolorem fugit iste expedita nobis aut. Veniam illo repudiandae beatae architecto voluptatibus magnam ex qui doloremque.</div>
+        <div><img src="./images/rocket logo.JPG" alt="rocket logo"><h2>READY TO GO</h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi saepe laborum sint et ducimus id accusantium vel, aperiam officia officiis, recusandae consequatur, dicta nostrum beatae quas tenetur sequi amet nulla!</div>
+    </section>
+    <section class="content">
+        <div>
+            <h1>FEATURED CONTENT</h1>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat similique corrupti natus est expedita laborum quis, error dicta unde dolore omnis, iusto nostrum fugit earum, adipisci at accusamus ea!</h5>
+            <img src="./images/sea shore.JPG" alt="seashore image">
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="div1">
+            <div class="div2"><h5>SECONDARY CONTENT</h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde a aliquam laudantium dolore eveniet veniam. Tempore illo sequi alias neque ipsum amet, odio harum dolore recusandae, eveniet culpa, doloremque quod.<button>View more</button></div>
+            <div class="div2" id="div11"><img src="./images/night mount.JPG" alt="a mountain"></div>
+            <div class="div2"><h5>SECONDARY CONTENT</h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, culpa! Iste error nemo rem illo explicabo voluptatem fugiat maiores magnam culpa ipsum! Nihil suscipit nam dolorum autem voluptate hic et.<button>View more</button></div>
+            <div class="div2" id="div11"><img src="./images/mount 1.JPG" alt="a man standing"></div>
+        </div>
+    </section>
+    <section class="contact">
+        <h1>HEARD ENOUGH?</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque minima a rem culpa tenetur animi laboriosam deserunt magnam quis doloremque ducimus est, commodi ut nihil veritatis veniam, reiciendis nemo quod!
+            <button>Get Started</button>
+    </section>
+    <section class="footer">
+        <div  id="linkdiv"class="footdiv">
+            &copy;Copyright 2014 CompanyName  All rights reserved
+            <a class="footlink" href="#">Terms of Services | Privacy</a>
+        </div>
+        <div class="footdiv">
+            <h5>COMPANY</h5>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Meet The Team</a></li>
+                <li><a href="#">What We Do</a></li>
+                <li><a href="#">Carrers</a></li>
+            </ul>
+        </div>
+        <div class="footdiv">
+            <h5>COMPANY</h5>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Meet The Team</a></li>
+                <li><a href="#">What We Do</a></li>
+                <li><a href="#">Carrers</a></li>
+            </ul>
+        </div>
+        <div class="footdiv">
+            <h5>COMPANY</h5>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Meet The Team</a></li>
+                <li><a href="#">What We Do</a></li>
+                <li><a href="#">Carrers</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
